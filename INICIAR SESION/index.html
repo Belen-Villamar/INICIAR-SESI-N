@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INICIO DE SESIÓN</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    <div class="contenedor-login">
+        <div class="contenedor-slider">
+
+            <div class="slider">
+                <div class="slide fade ">
+                    <img src="imagen1.jpg" alt="">
+                </div>
+                <div class="slide fade">
+                    <img src="imagen2.png" alt="">
+                    <div class="contenido-slider">
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="prev"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="next"><i class="fas fa-chevron-right"></i></a>
+            <div class="dots">
+            </div>
+        </div>
+        <div class="contenedor-texto">
+
+            <div class="contenedor-form">
+
+                <h1 class="titulo">RESIDENCIA UNIVERSITARIA</h1>
+                <p class="descripcion">Ingresa a tu cuenta para revisar 
+                    las habitaciones disponibles para ti.
+                </p>
+                <ul class="tabs-links">
+                    <li class="tab-link active">Iniciar Sesión</li>
+                </ul>
+                <form action="" method="POST" id="formLogin" class="formulario active">
+
+                    <div class="error-text">
+                        <p>aqui los errores del formulario</p>
+                    </div>
+
+                    <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+                    <div class="grupo-input">
+
+                        <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                        <button type="button" class="icono fas fa-eye mostrarClave"><button>                       
+                    </div>
+                    <a href="#" class="link">¿Ovidaste tu contraseña?</a>
+                    <button class="btn" id="btnLogin" type="button">Iniciar Sesión</button>
+                </form>
+                <form action="" method="POST" id="formRegistro" class="formulario ">
+                    <div class="error-text ">                       
+                    </div>
+                    <input type="text" placeholder="Nombre y Apellidos" class="input-text" name="nombre" autocomplete="off"> 
+                    <input type="text" placeholder="Correo electrónico" class="input-text" name="correo" autocomplete="off"> 
+                    <div class="grupo-input">
+
+                        <input type="password" placeholder="Contraseña" name="password" class="input-text clave">
+                        <button type="button" class="icono fas fa-eye mostrarClave"></button>
+                        
+                    </div>
+                    <label class="contenedor-cbx animate">
+                        Me gustaría recibir notificaciones sobre productos
+                        <input type="checkbox" name="cbx_notificaciones" checked>
+                        <span class="cbx-marca"></span>
+                    </label>
+                     <label class="contenedor-cbx animate">
+                        He leído y acepto los
+                        <a href="#" class="link">Términos y Condiciones</a>
+                        <a href="#" class="link">y Política de privacidad de mi Residencia</a>
+
+                        <input type="checkbox" name="cbx_terminos" >
+                        <span class="cbx-marca"></span>
+                    </label>
+                    <button class="btn" id="btnRegistro" type="button">Crear Cuenta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script> 
+</body>
+</html>
